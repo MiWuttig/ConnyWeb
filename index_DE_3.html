@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="DE">
+    <head>
+        <title>Besser Bewegt Constance Freiling</title>
+      
+        <link rel="icon" type="image/png" href="images/Logo3.png"/>
+
+        <script src="js/HamburgerMenu.js"></script>
+
+        <!-- Bootstrap 4 - Start -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap 4 - Stop -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://use.typekit.net/onq2ryq.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/body_3.css">
+        <link rel="stylesheet" type="text/css" href="css/HamburgerMenu.css"/>
+    </head>
+    <!-- Created By Fabio Abbruzzesi and Michael Wuttig-->
+    <body>
+      <header class="navigation">
+        <div class="nav-container">
+          <h1 class="brand">
+            <a href="#!">LOGO.com</a>
+          </h1>
+        
+          <nav>
+            <div id="Hamburger" onclick="OpenHamburger()">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="nav-list">
+              <!-- Setting the links to #! will ensure that no action takes place on click. -->
+              <li><a href="#!" onclick="OpenHamburger('closed')">Home</a></li>
+              <li><a href="#!" onclick="OpenHamburger('closed')">About</a></li>
+              <li><a href="#!" onclick="OpenHamburger('closed')">Contact</a></li>
+
+              <li><a href="#!" id="language" onclick="ChooseLanguage()">deu</a>
+                <ul class="nav-dropdown" id="lang">
+                  <li><a href="#!" onclick="OpenHamburger('closed')">english</a></li>
+                  <li><a href="#!" onclick="OpenHamburger('closed')">deutsch</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1 style="font-size:50px">Willkommen</h1>
+              <p>Constanze Freiling - Personaltrainer</p>
+              <button>Kontakt</button>
+            </div>
+        </div>
+        <h2 class="Title_center">ABOUT THE ACTIVITIES</h3>
+        <p class="Title_desc">Key features</p>
+        
+        <!-- <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 bewegung box col-md-4">
+                  <h3>Bewegung</h2>
+                    <p>Klettern, Gymnastik, Krafttraining, Beweglichkeit,  Ausdauersport – Neueinsteiger, Wiedereinsteiger oder Könner? Ich bewege mit Begeisterung.</p>
+                    <img class="img_bewegung" src="img/standing-336554_1920.jpg" alt="Tänzer bewegung, credit: Ahmad Odeh on Unsplash"> 
+                </div>
+                <div class="col-sm-12 outdoor box col-md-4">
+                  <h3>Outdoor / Indoor</h2>
+                  <p>Bei Wind und Wetter, drinnen oder draussen – ich biete Sport, Spass und Bewegung im Einzeltraining oder für Gruppen an.</p>
+                  <img class="img_outdoor" src="img/2008_10_19_Künstmühlefels-035-scaled.jpg" alt="Klettern outdoor, credit: Christoph Deinet on Unsplash">
+                </div>
+                <div class="col-sm-12 training box col-md-4">
+                  <h3>Training</h2>
+                  <p>Nehmt gern mit mir Kontakt auf für Euer individuelles Training. Ich führe auch gern Betriebssportgruppen oder Team Events durch.</p>
+                  <img class="img_training" src="img/training.jpg" alt="Training, credit: Victor Freitas on Unsplash">
+                </div>
+            </div> -->
+
+
+            <div class="card-deck">
+              <div class="card card_activities">
+                <div class="card-body">
+                  <h2 class="card-title title_activities">Bewegung</h5>
+                  <p class="card-text text_activities">Klettern, Gymnastik, Krafttraining, Beweglichkeit,  Ausdauersport – Neueinsteiger, Wiedereinsteiger oder Könner? Ich bewege mit Begeisterung.</p>
+                </div>
+                <img class="card-img-bottom img_activities" src="img/standing-336554_1920.jpg" alt="Card image cap">
+              </div>
+              <div class="card card_activities">
+                <div class="card-body">
+                  <h2 class="card-title title_activities">Outdoor / Indoor</h5>
+                  <p class="card-text text_activities">Bei Wind und Wetter, drinnen oder draussen – ich biete Sport, Spass und Bewegung im Einzeltraining oder für Gruppen an.</p>
+                </div>
+                <img class="card-img-bottom img_activities" src="img/2008_10_19_Künstmühlefels-035-scaled.jpg" alt="Card image cap">
+              </div>
+              <div class="card card_activities">
+                <div class="card-body">
+                  <h2 class="card-title title_activities">Training</h5>
+                  <p class="card-text text_activities">Nehmt gern mit mir Kontakt auf für Euer individuelles Training. Ich führe auch gern Betriebssportgruppen oder Team Events durch.</p>
+                </div>
+                <img class="card-img-bottom img_activities" src="img/training.jpg" alt="Card image cap">
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-sm-12 img_box box col-md-4">
+                <img class="img_bewegung" src="img/standing-336554_1920.jpg" alt="Tänzer bewegung, credit: Ahmad Odeh on Unsplash"> 
+              </div>
+              <div class="col-sm-12 img_box box col-md-4">
+                <img class="img_outdoor" src="img/2008_10_19_Künstmühlefels-035-scaled.jpg" alt="Klettern outdoor, credit: Christoph Deinet on Unsplash">
+              </div>
+              <div class="col-sm-12 img_box box col-md-4">
+                <img class="img_training" src="img/training.jpg" alt="Training, credit: Victor Freitas on Unsplash">
+              </div>
+            </div> -->
+
+            
+            
+        </div> 
+        
+
+    </body>
+</html>
+
+
